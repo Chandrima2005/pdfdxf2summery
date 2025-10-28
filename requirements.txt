@@ -1,0 +1,8 @@
+streamlit
+ezdxf
+pdf2image
+aspose-cad
+Pillow
+fitz  
+tempfile
+ezdxf
