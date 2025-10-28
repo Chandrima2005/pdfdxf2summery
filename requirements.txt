@@ -1,8 +1,3 @@
-streamlit
-ezdxf
-pdf2image
-aspose-cad
-Pillow
-fitz  
-tempfile
-ezdxf
+streamlit==1.50.0
+PyMuPDF==1.24.9
+ezdxf==1.3.3
