@@ -12,6 +12,7 @@ const state = {
   drawing: null,        // current drawing id (sample name or upload id)
   spec: null,           // uploaded spec id; samples use their own spec on the server
   page: 1,              // current page of a PDF drawing
+  catsOpen: false,      // drawing-type chooser stays hidden until "Samples" is clicked
   sampleDrawing: null,  // what the Samples tab had open, restored when switching back
   upload: { drawing: null, spec: null, specName: null },
   info: null,           // /api/drawing response
@@ -69,7 +70,7 @@ function renderStatus() {
 function renderLibrary() {
   document.querySelectorAll("#srcSwitch button").forEach(b => b.classList.toggle("on", b.dataset.src === state.src));
   const samples = state.src === "samples";
-  $("cats").hidden = !samples;
+  $("cats").hidden = !samples || !state.catsOpen;
   $("sampleRow").hidden = !samples;
   $("uploads").hidden = samples;
   if (!samples) return;
@@ -288,6 +289,11 @@ function bind() {
   $("wave").innerHTML = waveSvg();
   $("srcSwitch").addEventListener("click", e => {
     const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.src === "samples") {
+      const already = state.src === "samples";
+      state.catsOpen = already ? !state.catsOpen : true;   // clicking Samples again collapses the chooser
+      if (already) { renderLibrary(); return; }
+    }
     if (b.dataset.src === state.src) return;
     state.src = b.dataset.src;
     if (state.src === "upload") {
