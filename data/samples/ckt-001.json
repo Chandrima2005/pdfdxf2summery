@@ -1,0 +1,174 @@
+{
+  "id": "CKT-001",
+  "kind": "electronic",
+  "spec": null,
+  "file": "ckt-001.dxf",
+  "units": "unitless",
+  "components": [
+    {
+      "tag": "J1",
+      "type": "CONNECTOR",
+      "attrs": {
+        "PINS": 2
+      }
+    },
+    {
+      "tag": "U1",
+      "type": "REGULATOR",
+      "attrs": {
+        "PART": "REG-5V",
+        "VOUT_V": 5
+      }
+    },
+    {
+      "tag": "R1",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 330,
+        "POWER_W": 0.25
+      }
+    },
+    {
+      "tag": "C1",
+      "type": "CAPACITOR",
+      "attrs": {
+        "VALUE_UF": 10,
+        "VOLTAGE_V": 25
+      }
+    },
+    {
+      "tag": "R2",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 1000,
+        "POWER_W": 0.25
+      }
+    },
+    {
+      "tag": "R3",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 1000,
+        "POWER_W": 0.5
+      }
+    },
+    {
+      "tag": "R4",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 330,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "R5",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 4700,
+        "POWER_W": 0.5
+      }
+    }
+  ],
+  "nets": {
+    "VIN": [
+      "J1",
+      "U1"
+    ],
+    "VCC": [
+      "C1",
+      "R1",
+      "R2",
+      "R4",
+      "U1"
+    ],
+    "GND": [
+      "C1",
+      "J1",
+      "R1",
+      "R3",
+      "R5"
+    ],
+    "N2": [
+      "R2",
+      "R3"
+    ],
+    "N3": [
+      "R4",
+      "R5"
+    ]
+  },
+  "neighbours": {
+    "J1": [
+      "C1",
+      "R1",
+      "R3",
+      "R5",
+      "U1"
+    ],
+    "U1": [
+      "C1",
+      "J1",
+      "R1",
+      "R2",
+      "R4"
+    ],
+    "R1": [
+      "C1",
+      "J1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "U1"
+    ],
+    "C1": [
+      "J1",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "U1"
+    ],
+    "R2": [
+      "C1",
+      "R1",
+      "R3",
+      "R4",
+      "U1"
+    ],
+    "R3": [
+      "C1",
+      "J1",
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "R4": [
+      "C1",
+      "R1",
+      "R2",
+      "R5",
+      "U1"
+    ],
+    "R5": [
+      "C1",
+      "J1",
+      "R1",
+      "R3",
+      "R4"
+    ]
+  },
+  "counts": {
+    "resistors": 5,
+    "capacitors": 1,
+    "leds": 0,
+    "components": 8
+  },
+  "layers": [
+    "WIRES",
+    "COMPONENTS",
+    "TAGS",
+    "ANNOTATION"
+  ]
+}

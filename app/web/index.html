@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAD Copilot</title>
+  <meta name="description" content="Ask distribution boards, building plans and circuits anything. Measured from the DXF, cited from the spec.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark"; } catch (e) {}</script>
+  <link rel="stylesheet" href="/static/styles.css?v=3">
+  <link rel="prefetch" href="/app">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="/">📐 <span>CAD <span class="grad">Copilot</span></span></a>
+      <div class="actions">
+        <a class="btn" href="/api/download" title="Offline copy for Windows, Mac and Linux">⬇ Download desktop app</a>
+        <a class="btn primary" href="/app">Open app →</a>
+        <button class="btn round" data-theme-toggle>☀️ Light</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <span class="pill" id="modePill"><span class="dot"></span>Online · nothing to install</span>
+      <h1>Check <span class="hl t-db">boards</span>, <span class="hl t-plan">plans</span> and <span class="hl t-ckt">circuits</span>
+        <span class="grad anim">in seconds.</span></h1>
+      <p class="lead">Ask in plain English. Every number is measured from your DXF and every rule is quoted from the spec, with its page.</p>
+      <div class="try-row">
+        <a class="btn primary" href="/app?sample=db-001.dxf">⚡ Distribution board</a>
+        <a class="btn t-plan" href="/app?sample=plan-001.dxf">🏠 Building plan</a>
+        <a class="btn t-ckt" href="/app?sample=ckt-001.dxf">🔌 Circuit</a>
+      </div>
+    </section>
+
+    <!-- All three drawing types at once; each opens its sample -->
+    <section class="trio" id="trio"></section>
+
+    <div class="trust"><span>Measured, not guessed</span><span>Cited spec clauses</span><span>Pass / fail compliance</span><span>Works offline on desktop</span></div>
+
+    <section class="reveal">
+      <div class="eyebrow">Showcase</div>
+      <div class="section-title">Three kinds of drawings, one smart assistant</div>
+      <p class="section-sub">Built first for distribution boards. Pick a sample to try it now, or upload your own on the next page.</p>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="reveal" style="margin-top:3rem">
+      <div class="eyebrow">How it works</div>
+      <div class="section-title">From drawing to answer in seconds</div>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><h4>Pick or upload</h4><p>Use a sample drawing or upload your own DXF and an optional spec PDF.</p></div>
+        <div class="step"><div class="n">2</div><h4>Ask in plain English</h4><p>“What is the kitchen area?” “Are all sockets RCD-protected?”</p></div>
+        <div class="step"><div class="n">3</div><h4>Get a checked answer</h4><p>See the measurements, the tools used and the spec clauses behind every answer.</p></div>
+      </div>
+    </section>
+
+    <section class="band reveal">
+      <div class="eyebrow">Desktop app</div>
+      <div class="section-title">Work offline, on your own computer</div>
+      <p><b>1.</b> Download and unzip &nbsp;·&nbsp; <b>2.</b> Double-click <b>run.bat</b> (Mac/Linux: <b>sh run.sh</b>) &nbsp;·&nbsp;
+        <b>3.</b> Choose <b>Offline</b> or <b>Online</b> mode<br>Needs Python 3.10+. Your drawings never leave your machine in offline mode.</p>
+      <a class="btn primary" href="/api/download">⬇ Download for Windows / Mac / Linux</a>
+    </section>
+
+    <div class="footer">CAD Copilot · answers are drafts, check critical values before relying on them</div>
+  </div>
+
+  <script src="/static/common.js?v=3"></script>
+  <script src="/static/showreel.js?v=3"></script>
+  <script src="/static/landing.js?v=3"></script>
+</body>
+</html>

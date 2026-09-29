@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace · CAD Copilot</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark"; } catch (e) {}</script>
+  <link rel="stylesheet" href="/static/styles.css?v=4">
+</head>
+<body>
+  <div class="wrap">
+    <header class="appbar">
+      <a class="crumb" href="/">📐 <span>CAD <span class="grad">Copilot</span></span><span class="sep">/</span><span class="here">Workspace</span></a>
+      <span class="pill" id="status"><span class="dot"></span>Online</span>
+      <span class="spacer"></span>
+      <div class="seg" id="modeSwitch" hidden>
+        <button data-mode="online">Online</button><button data-mode="offline">Offline</button>
+      </div>
+      <a class="btn round" href="/">⌂ Home</a>
+      <button class="btn round" data-theme-toggle>☀️ Light</button>
+    </header>
+
+    <!-- Library: full-width row so the drawing types are the first thing people see -->
+    <section class="panel library">
+      <div class="lib-top">
+        <div class="lib-head">
+          <div class="panel-h"><span class="t"><i>🗂️</i>Library</span></div>
+          <div id="wave"></div>
+        </div>
+        <div class="seg big" id="srcSwitch">
+          <button data-src="samples" class="on">📁 Samples</button><button data-src="upload">⬆️ Upload</button>
+        </div>
+        <div class="cats" id="cats"></div>
+        <div class="uploads" id="uploads" hidden>
+          <label class="drop" id="dropDxf"><input type="file" accept=".dxf,.pdf">
+            <span class="ic">📐</span><span><b>Drawing · DXF or PDF</b><small>DXF is measured · PDF is read by the AI</small></span></label>
+          <label class="drop" id="dropPdf"><input type="file" accept=".pdf">
+            <span class="ic">📘</span><span><b>Specification PDF</b><small>Optional · for compliance checks</small></span></label>
+        </div>
+      </div>
+      <div id="sampleRow">
+        <div class="lib-sub"><span class="label" id="tileLabel"></span><span id="specBadge"></span></div>
+        <div class="tiles" id="tiles"></div>
+      </div>
+    </section>
+
+    <main class="work">
+      <section class="panel" id="viewer">
+        <div class="empty"><div class="ico">📐</div><h4>No drawing open</h4><p>Pick a sample from the library or upload a DXF.</p></div>
+      </section>
+
+      <section class="panel assistant">
+        <div class="panel-h">
+          <span class="t"><i>✨</i>Assistant <span class="s" id="answerCount"></span></span>
+          <button class="btn round" id="clearBtn" hidden>Clear</button>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="suggest" id="suggest"></div>
+        <form class="composer" id="composer">
+          <textarea id="question" rows="1" placeholder="Ask about the drawing or the specification…"></textarea>
+          <button type="submit" id="send" title="Send">➤</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/common.js?v=4"></script>
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>

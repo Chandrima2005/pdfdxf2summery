@@ -1,0 +1,100 @@
+{
+  "id": "PLAN-001",
+  "kind": "floorplan",
+  "spec": "building",
+  "file": "plan-001.dxf",
+  "units": "mm",
+  "width": 11000,
+  "depth": 8500,
+  "corridor_width": 1100,
+  "rooms": [
+    {
+      "name": "LIVING",
+      "band": "top",
+      "x0": 0,
+      "y0": 4800,
+      "x1": 7400,
+      "y1": 8500,
+      "width": 7400,
+      "depth": 3700,
+      "area_m2": 27.38,
+      "door_width": 900,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "KITCHEN",
+      "band": "top",
+      "x0": 7400,
+      "y0": 4800,
+      "x1": 11000,
+      "y1": 8500,
+      "width": 3600,
+      "depth": 3700,
+      "area_m2": 13.32,
+      "door_width": 900,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "BATH",
+      "band": "bottom",
+      "x0": 0,
+      "y0": 0,
+      "x1": 2500,
+      "y1": 3700,
+      "width": 2500,
+      "depth": 3700,
+      "area_m2": 9.25,
+      "door_width": 750,
+      "windows": []
+    },
+    {
+      "name": "BEDROOM 2",
+      "band": "bottom",
+      "x0": 2500,
+      "y0": 0,
+      "x1": 5500,
+      "y1": 3700,
+      "width": 3000,
+      "depth": 3700,
+      "area_m2": 11.1,
+      "door_width": 850,
+      "windows": []
+    },
+    {
+      "name": "BEDROOM 1",
+      "band": "bottom",
+      "x0": 5500,
+      "y0": 0,
+      "x1": 11000,
+      "y1": 3700,
+      "width": 5500,
+      "depth": 3700,
+      "area_m2": 20.35,
+      "door_width": 750,
+      "windows": [
+        900
+      ]
+    }
+  ],
+  "counts": {
+    "rooms": 5,
+    "doors": 5,
+    "windows": 3,
+    "bedrooms": 2
+  },
+  "total_wall_length": 72100.0,
+  "layers": [
+    "WALLS",
+    "ROOMS",
+    "ROOM_NAMES",
+    "CORRIDOR",
+    "DOORS",
+    "WINDOWS",
+    "DIMENSIONS",
+    "ANNOTATION"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "DB-008",
+  "kind": "electrical",
+  "spec": "electrical",
+  "file": "db-008.dxf",
+  "units": "unitless",
+  "main_rating_a": 50,
+  "circuits": [
+    {
+      "tag": "C1",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 16,
+      "cable_size": 1.5,
+      "loads": [
+        {
+          "tag": "LT1-1",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT1-2",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT1-3",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT1-4",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT1-5",
+          "type": "LIGHT",
+          "load_w": 24
+        }
+      ],
+      "cable_tag": "W1",
+      "cable_length_m": 12,
+      "load_w": 120
+    },
+    {
+      "tag": "C2",
+      "type": "WATER_HEATER",
+      "rcd": null,
+      "rating_a": 25,
+      "cable_size": 4.0,
+      "loads": [
+        {
+          "tag": "WH2",
+          "type": "WATER_HEATER",
+          "load_w": 2000
+        }
+      ],
+      "cable_tag": "W2",
+      "cable_length_m": 13,
+      "load_w": 2000
+    },
+    {
+      "tag": "C3",
+      "type": "SOCKETS",
+      "rcd": {
+        "tag": "RCD3",
+        "sens_ma": 100
+      },
+      "rating_a": 20,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "SK3-1",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK3-2",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK3-3",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK3-4",
+          "type": "SOCKET",
+          "load_w": 300
+        }
+      ],
+      "cable_tag": "W3",
+      "cable_length_m": 18,
+      "load_w": 1200
+    },
+    {
+      "tag": "C4",
+      "type": "AC",
+      "rcd": null,
+      "rating_a": 20,
+      "cable_size": 4.0,
+      "loads": [
+        {
+          "tag": "AC4",
+          "type": "AC_UNIT",
+          "load_w": 2500
+        }
+      ],
+      "cable_tag": "W4",
+      "cable_length_m": 25,
+      "load_w": 2500
+    },
+    {
+      "tag": "C5",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 6,
+      "cable_size": 1.5,
+      "loads": [
+        {
+          "tag": "LT5-1",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT5-2",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT5-3",
+          "type": "LIGHT",
+          "load_w": 24
+        }
+      ],
+      "cable_tag": "W5",
+      "cable_length_m": 17,
+      "load_w": 72
+    }
+  ],
+  "counts": {
+    "circuits": 5,
+    "lights": 8,
+    "sockets": 4,
+    "ac_units": 1,
+    "water_heaters": 1,
+    "rcds": 1
+  },
+  "total_cable_length_m": 85,
+  "total_load_w": 5892,
+  "layers": [
+    "BUSBAR",
+    "WIRES",
+    "DEVICES",
+    "LOADS",
+    "TAGS",
+    "LABELS",
+    "ANNOTATION"
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "id": "DB-006",
+  "kind": "electrical",
+  "spec": "electrical",
+  "file": "db-006.dxf",
+  "units": "unitless",
+  "main_rating_a": 50,
+  "circuits": [
+    {
+      "tag": "C1",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 10,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "LT1-1",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT1-2",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT1-3",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT1-4",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT1-5",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT1-6",
+          "type": "LIGHT",
+          "load_w": 12
+        }
+      ],
+      "cable_tag": "W1",
+      "cable_length_m": 15,
+      "load_w": 72
+    },
+    {
+      "tag": "C2",
+      "type": "SOCKETS",
+      "rcd": {
+        "tag": "RCD2",
+        "sens_ma": 30
+      },
+      "rating_a": 20,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "SK2-1",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-2",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-3",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-4",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-5",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-6",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-7",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-8",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-9",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK2-10",
+          "type": "SOCKET",
+          "load_w": 300
+        }
+      ],
+      "cable_tag": "W2",
+      "cable_length_m": 17,
+      "load_w": 3000
+    },
+    {
+      "tag": "C3",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 16,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "LT3-1",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT3-2",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT3-3",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT3-4",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT3-5",
+          "type": "LIGHT",
+          "load_w": 18
+        }
+      ],
+      "cable_tag": "W3",
+      "cable_length_m": 26,
+      "load_w": 90
+    },
+    {
+      "tag": "C4",
+      "type": "WATER_HEATER",
+      "rcd": null,
+      "rating_a": 25,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "WH4",
+          "type": "WATER_HEATER",
+          "load_w": 2000
+        }
+      ],
+      "cable_tag": "W4",
+      "cable_length_m": 26,
+      "load_w": 2000
+    },
+    {
+      "tag": "C5",
+      "type": "AC",
+      "rcd": null,
+      "rating_a": 16,
+      "cable_size": 4.0,
+      "loads": [
+        {
+          "tag": "AC5",
+          "type": "AC_UNIT",
+          "load_w": 2000
+        }
+      ],
+      "cable_tag": "W5",
+      "cable_length_m": 22,
+      "load_w": 2000
+    },
+    {
+      "tag": "C6",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 16,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "LT6-1",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-2",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-3",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-4",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-5",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-6",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-7",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-8",
+          "type": "LIGHT",
+          "load_w": 12
+        },
+        {
+          "tag": "LT6-9",
+          "type": "LIGHT",
+          "load_w": 12
+        }
+      ],
+      "cable_tag": "W6",
+      "cable_length_m": 25,
+      "load_w": 108
+    },
+    {
+      "tag": "C7",
+      "type": "SOCKETS",
+      "rcd": {
+        "tag": "RCD7",
+        "sens_ma": 30
+      },
+      "rating_a": 32,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "SK7-1",
+          "type": "SOCKET",
+          "load_w": 200
+        },
+        {
+          "tag": "SK7-2",
+          "type": "SOCKET",
+          "load_w": 200
+        }
+      ],
+      "cable_tag": "W7",
+      "cable_length_m": 18,
+      "load_w": 400
+    },
+    {
+      "tag": "C8",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 10,
+      "cable_size": 1.5,
+      "loads": [
+        {
+          "tag": "LT8-1",
+          "type": "LIGHT",
+          "load_w": 36
+        },
+        {
+          "tag": "LT8-2",
+          "type": "LIGHT",
+          "load_w": 36
+        },
+        {
+          "tag": "LT8-3",
+          "type": "LIGHT",
+          "load_w": 36
+        }
+      ],
+      "cable_tag": "W8",
+      "cable_length_m": 28,
+      "load_w": 108
+    }
+  ],
+  "counts": {
+    "circuits": 8,
+    "lights": 23,
+    "sockets": 12,
+    "ac_units": 1,
+    "water_heaters": 1,
+    "rcds": 2
+  },
+  "total_cable_length_m": 177,
+  "total_load_w": 7778,
+  "layers": [
+    "BUSBAR",
+    "WIRES",
+    "DEVICES",
+    "LOADS",
+    "TAGS",
+    "LABELS",
+    "ANNOTATION"
+  ]
+}

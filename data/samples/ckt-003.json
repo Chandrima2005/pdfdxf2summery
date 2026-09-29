@@ -1,0 +1,222 @@
+{
+  "id": "CKT-003",
+  "kind": "electronic",
+  "spec": null,
+  "file": "ckt-003.dxf",
+  "units": "unitless",
+  "components": [
+    {
+      "tag": "J1",
+      "type": "CONNECTOR",
+      "attrs": {
+        "PINS": 2
+      }
+    },
+    {
+      "tag": "U1",
+      "type": "REGULATOR",
+      "attrs": {
+        "PART": "REG-5V",
+        "VOUT_V": 5
+      }
+    },
+    {
+      "tag": "R1",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 10000,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "R2",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 4700,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "R3",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 10000,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "R4",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 470,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "R5",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 220,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "C1",
+      "type": "CAPACITOR",
+      "attrs": {
+        "VALUE_UF": 1,
+        "VOLTAGE_V": 16
+      }
+    },
+    {
+      "tag": "R6",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 220,
+        "POWER_W": 0.5
+      }
+    },
+    {
+      "tag": "C2",
+      "type": "CAPACITOR",
+      "attrs": {
+        "VALUE_UF": 0.1,
+        "VOLTAGE_V": 16
+      }
+    }
+  ],
+  "nets": {
+    "VIN": [
+      "J1",
+      "U1"
+    ],
+    "VCC": [
+      "C1",
+      "C2",
+      "R1",
+      "R2",
+      "R4",
+      "U1"
+    ],
+    "GND": [
+      "C2",
+      "J1",
+      "R1",
+      "R3",
+      "R5",
+      "R6"
+    ],
+    "N1": [
+      "R2",
+      "R3"
+    ],
+    "N2": [
+      "R4",
+      "R5"
+    ],
+    "N3": [
+      "C1",
+      "R6"
+    ]
+  },
+  "neighbours": {
+    "J1": [
+      "C2",
+      "R1",
+      "R3",
+      "R5",
+      "R6",
+      "U1"
+    ],
+    "U1": [
+      "C1",
+      "C2",
+      "J1",
+      "R1",
+      "R2",
+      "R4"
+    ],
+    "R1": [
+      "C1",
+      "C2",
+      "J1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "U1"
+    ],
+    "R2": [
+      "C1",
+      "C2",
+      "R1",
+      "R3",
+      "R4",
+      "U1"
+    ],
+    "R3": [
+      "C2",
+      "J1",
+      "R1",
+      "R2",
+      "R5",
+      "R6"
+    ],
+    "R4": [
+      "C1",
+      "C2",
+      "R1",
+      "R2",
+      "R5",
+      "U1"
+    ],
+    "R5": [
+      "C2",
+      "J1",
+      "R1",
+      "R3",
+      "R4",
+      "R6"
+    ],
+    "C1": [
+      "C2",
+      "R1",
+      "R2",
+      "R4",
+      "R6",
+      "U1"
+    ],
+    "R6": [
+      "C1",
+      "C2",
+      "J1",
+      "R1",
+      "R3",
+      "R5"
+    ],
+    "C2": [
+      "C1",
+      "J1",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "U1"
+    ]
+  },
+  "counts": {
+    "resistors": 6,
+    "capacitors": 2,
+    "leds": 0,
+    "components": 10
+  },
+  "layers": [
+    "WIRES",
+    "COMPONENTS",
+    "TAGS",
+    "ANNOTATION"
+  ]
+}

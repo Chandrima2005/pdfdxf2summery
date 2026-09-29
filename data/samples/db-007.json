@@ -1,0 +1,227 @@
+{
+  "id": "DB-007",
+  "kind": "electrical",
+  "spec": "electrical",
+  "file": "db-007.dxf",
+  "units": "unitless",
+  "main_rating_a": 63,
+  "circuits": [
+    {
+      "tag": "C1",
+      "type": "AC",
+      "rcd": null,
+      "rating_a": 16,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "AC1",
+          "type": "AC_UNIT",
+          "load_w": 3500
+        }
+      ],
+      "cable_tag": "W1",
+      "cable_length_m": 18,
+      "load_w": 3500
+    },
+    {
+      "tag": "C2",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 6,
+      "cable_size": 1.5,
+      "loads": [
+        {
+          "tag": "LT2-1",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT2-2",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT2-3",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT2-4",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT2-5",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT2-6",
+          "type": "LIGHT",
+          "load_w": 24
+        },
+        {
+          "tag": "LT2-7",
+          "type": "LIGHT",
+          "load_w": 24
+        }
+      ],
+      "cable_tag": "W2",
+      "cable_length_m": 28,
+      "load_w": 168
+    },
+    {
+      "tag": "C3",
+      "type": "WATER_HEATER",
+      "rcd": null,
+      "rating_a": 20,
+      "cable_size": 4.0,
+      "loads": [
+        {
+          "tag": "WH3",
+          "type": "WATER_HEATER",
+          "load_w": 3000
+        }
+      ],
+      "cable_tag": "W3",
+      "cable_length_m": 29,
+      "load_w": 3000
+    },
+    {
+      "tag": "C4",
+      "type": "SOCKETS",
+      "rcd": {
+        "tag": "RCD4",
+        "sens_ma": 30
+      },
+      "rating_a": 20,
+      "cable_size": 2.5,
+      "loads": [
+        {
+          "tag": "SK4-1",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-2",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-3",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-4",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-5",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-6",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-7",
+          "type": "SOCKET",
+          "load_w": 300
+        },
+        {
+          "tag": "SK4-8",
+          "type": "SOCKET",
+          "load_w": 300
+        }
+      ],
+      "cable_tag": "W4",
+      "cable_length_m": 30,
+      "load_w": 2400
+    },
+    {
+      "tag": "C5",
+      "type": "LIGHTING",
+      "rcd": null,
+      "rating_a": 16,
+      "cable_size": 1.5,
+      "loads": [
+        {
+          "tag": "LT5-1",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-2",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-3",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-4",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-5",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-6",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-7",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-8",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-9",
+          "type": "LIGHT",
+          "load_w": 18
+        },
+        {
+          "tag": "LT5-10",
+          "type": "LIGHT",
+          "load_w": 18
+        }
+      ],
+      "cable_tag": "W5",
+      "cable_length_m": 22,
+      "load_w": 180
+    }
+  ],
+  "counts": {
+    "circuits": 5,
+    "lights": 17,
+    "sockets": 8,
+    "ac_units": 1,
+    "water_heaters": 1,
+    "rcds": 1
+  },
+  "total_cable_length_m": 127,
+  "total_load_w": 9248,
+  "layers": [
+    "BUSBAR",
+    "WIRES",
+    "DEVICES",
+    "LOADS",
+    "TAGS",
+    "LABELS",
+    "ANNOTATION"
+  ]
+}

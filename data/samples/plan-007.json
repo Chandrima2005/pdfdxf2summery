@@ -1,0 +1,119 @@
+{
+  "id": "PLAN-007",
+  "kind": "floorplan",
+  "spec": "building",
+  "file": "plan-007.dxf",
+  "units": "mm",
+  "width": 12500,
+  "depth": 9000,
+  "corridor_width": 1200,
+  "rooms": [
+    {
+      "name": "KITCHEN",
+      "band": "top",
+      "x0": 0,
+      "y0": 5100,
+      "x1": 3000,
+      "y1": 9000,
+      "width": 3000,
+      "depth": 3900,
+      "area_m2": 11.7,
+      "door_width": 750,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "BEDROOM 2",
+      "band": "top",
+      "x0": 3000,
+      "y0": 5100,
+      "x1": 7400,
+      "y1": 9000,
+      "width": 4400,
+      "depth": 3900,
+      "area_m2": 17.16,
+      "door_width": 850,
+      "windows": [
+        1500
+      ]
+    },
+    {
+      "name": "STUDY",
+      "band": "top",
+      "x0": 7400,
+      "y0": 5100,
+      "x1": 9800,
+      "y1": 9000,
+      "width": 2400,
+      "depth": 3900,
+      "area_m2": 9.36,
+      "door_width": 750,
+      "windows": [
+        1500
+      ]
+    },
+    {
+      "name": "BATH",
+      "band": "top",
+      "x0": 9800,
+      "y0": 5100,
+      "x1": 12500,
+      "y1": 9000,
+      "width": 2700,
+      "depth": 3900,
+      "area_m2": 10.53,
+      "door_width": 750,
+      "windows": [
+        1500
+      ]
+    },
+    {
+      "name": "LIVING",
+      "band": "bottom",
+      "x0": 0,
+      "y0": 0,
+      "x1": 5200,
+      "y1": 3900,
+      "width": 5200,
+      "depth": 3900,
+      "area_m2": 20.28,
+      "door_width": 900,
+      "windows": [
+        1200
+      ]
+    },
+    {
+      "name": "BEDROOM 1",
+      "band": "bottom",
+      "x0": 5200,
+      "y0": 0,
+      "x1": 12500,
+      "y1": 3900,
+      "width": 7300,
+      "depth": 3900,
+      "area_m2": 28.47,
+      "door_width": 750,
+      "windows": [
+        900
+      ]
+    }
+  ],
+  "counts": {
+    "rooms": 6,
+    "doors": 6,
+    "windows": 6,
+    "bedrooms": 2
+  },
+  "total_wall_length": 83600.0,
+  "layers": [
+    "WALLS",
+    "ROOMS",
+    "ROOM_NAMES",
+    "CORRIDOR",
+    "DOORS",
+    "WINDOWS",
+    "DIMENSIONS",
+    "ANNOTATION"
+  ]
+}

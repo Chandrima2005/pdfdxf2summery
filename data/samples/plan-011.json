@@ -1,0 +1,134 @@
+{
+  "id": "PLAN-011",
+  "kind": "floorplan",
+  "spec": "building",
+  "file": "plan-011.dxf",
+  "units": "mm",
+  "width": 13500,
+  "depth": 12000,
+  "corridor_width": 1200,
+  "rooms": [
+    {
+      "name": "BEDROOM 3",
+      "band": "top",
+      "x0": 0,
+      "y0": 6600,
+      "x1": 3600,
+      "y1": 12000,
+      "width": 3600,
+      "depth": 5400,
+      "area_m2": 19.44,
+      "door_width": 750,
+      "windows": [
+        1200
+      ]
+    },
+    {
+      "name": "LIVING",
+      "band": "top",
+      "x0": 3600,
+      "y0": 6600,
+      "x1": 8100,
+      "y1": 12000,
+      "width": 4500,
+      "depth": 5400,
+      "area_m2": 24.3,
+      "door_width": 900,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "BATH",
+      "band": "top",
+      "x0": 8100,
+      "y0": 6600,
+      "x1": 13500,
+      "y1": 12000,
+      "width": 5400,
+      "depth": 5400,
+      "area_m2": 29.16,
+      "door_width": 750,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "BEDROOM 1",
+      "band": "bottom",
+      "x0": 0,
+      "y0": 0,
+      "x1": 2400,
+      "y1": 5400,
+      "width": 2400,
+      "depth": 5400,
+      "area_m2": 12.96,
+      "door_width": 900,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "BEDROOM 2",
+      "band": "bottom",
+      "x0": 2400,
+      "y0": 0,
+      "x1": 6100,
+      "y1": 5400,
+      "width": 3700,
+      "depth": 5400,
+      "area_m2": 19.98,
+      "door_width": 900,
+      "windows": [
+        1200
+      ]
+    },
+    {
+      "name": "BEDROOM 4",
+      "band": "bottom",
+      "x0": 6100,
+      "y0": 0,
+      "x1": 8700,
+      "y1": 5400,
+      "width": 2600,
+      "depth": 5400,
+      "area_m2": 14.04,
+      "door_width": 750,
+      "windows": [
+        1200
+      ]
+    },
+    {
+      "name": "KITCHEN",
+      "band": "bottom",
+      "x0": 8700,
+      "y0": 0,
+      "x1": 13500,
+      "y1": 5400,
+      "width": 4800,
+      "depth": 5400,
+      "area_m2": 25.92,
+      "door_width": 750,
+      "windows": [
+        1500
+      ]
+    }
+  ],
+  "counts": {
+    "rooms": 7,
+    "doors": 7,
+    "windows": 7,
+    "bedrooms": 4
+  },
+  "total_wall_length": 105000.0,
+  "layers": [
+    "WALLS",
+    "ROOMS",
+    "ROOM_NAMES",
+    "CORRIDOR",
+    "DOORS",
+    "WINDOWS",
+    "DIMENSIONS",
+    "ANNOTATION"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "BRK-003",
+  "kind": "part",
+  "spec": null,
+  "file": "brk-003.dxf",
+  "units": "mm",
+  "width": 150,
+  "height": 100,
+  "holes": [
+    {
+      "x": 12,
+      "y": 12,
+      "d": 8
+    },
+    {
+      "x": 138,
+      "y": 12,
+      "d": 8
+    },
+    {
+      "x": 138,
+      "y": 88,
+      "d": 8
+    },
+    {
+      "x": 12,
+      "y": 88,
+      "d": 8
+    },
+    {
+      "x": 78.9,
+      "y": 45.2,
+      "d": 12
+    },
+    {
+      "x": 31.6,
+      "y": 50.1,
+      "d": 10
+    },
+    {
+      "x": 114.7,
+      "y": 68.7,
+      "d": 6
+    }
+  ],
+  "counts": {
+    "holes": 7
+  },
+  "plate_area_mm2": 15000,
+  "net_area_mm2": 14579.03,
+  "layers": [
+    "OUTLINE",
+    "HOLES",
+    "CENTERLINES",
+    "DIMENSIONS",
+    "ANNOTATION"
+  ]
+}

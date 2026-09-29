@@ -1,0 +1,110 @@
+{
+  "id": "CKT-002",
+  "kind": "electronic",
+  "spec": null,
+  "file": "ckt-002.dxf",
+  "units": "unitless",
+  "components": [
+    {
+      "tag": "J1",
+      "type": "CONNECTOR",
+      "attrs": {
+        "PINS": 2
+      }
+    },
+    {
+      "tag": "U1",
+      "type": "REGULATOR",
+      "attrs": {
+        "PART": "REG-5V",
+        "VOUT_V": 5
+      }
+    },
+    {
+      "tag": "R1",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 220,
+        "POWER_W": 0.125
+      }
+    },
+    {
+      "tag": "R2",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 10000,
+        "POWER_W": 0.5
+      }
+    },
+    {
+      "tag": "R3",
+      "type": "RESISTOR",
+      "attrs": {
+        "VALUE_OHM": 10000,
+        "POWER_W": 0.125
+      }
+    }
+  ],
+  "nets": {
+    "VIN": [
+      "J1",
+      "U1"
+    ],
+    "VCC": [
+      "R1",
+      "R2",
+      "R3",
+      "U1"
+    ],
+    "GND": [
+      "J1",
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  "neighbours": {
+    "J1": [
+      "R1",
+      "R2",
+      "R3",
+      "U1"
+    ],
+    "U1": [
+      "J1",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "R1": [
+      "J1",
+      "R2",
+      "R3",
+      "U1"
+    ],
+    "R2": [
+      "J1",
+      "R1",
+      "R3",
+      "U1"
+    ],
+    "R3": [
+      "J1",
+      "R1",
+      "R2",
+      "U1"
+    ]
+  },
+  "counts": {
+    "resistors": 3,
+    "capacitors": 0,
+    "leds": 0,
+    "components": 5
+  },
+  "layers": [
+    "WIRES",
+    "COMPONENTS",
+    "TAGS",
+    "ANNOTATION"
+  ]
+}

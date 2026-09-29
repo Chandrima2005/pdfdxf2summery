@@ -1,0 +1,4 @@
+# Dense embeddings (recommended). Without this, retrieval falls back to TF-IDF.
+# CPU-only torch keeps the install small:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-embeddings.txt
+sentence-transformers>=3.0

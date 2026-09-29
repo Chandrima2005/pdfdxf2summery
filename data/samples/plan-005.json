@@ -1,0 +1,147 @@
+{
+  "id": "PLAN-005",
+  "kind": "floorplan",
+  "spec": "building",
+  "file": "plan-005.dxf",
+  "units": "mm",
+  "width": 14500,
+  "depth": 10000,
+  "corridor_width": 1100,
+  "rooms": [
+    {
+      "name": "BEDROOM 2",
+      "band": "top",
+      "x0": 0,
+      "y0": 5500,
+      "x1": 2500,
+      "y1": 10000,
+      "width": 2500,
+      "depth": 4500,
+      "area_m2": 11.25,
+      "door_width": 850,
+      "windows": [
+        1200
+      ]
+    },
+    {
+      "name": "BATH",
+      "band": "top",
+      "x0": 2500,
+      "y0": 5500,
+      "x1": 5500,
+      "y1": 10000,
+      "width": 3000,
+      "depth": 4500,
+      "area_m2": 13.5,
+      "door_width": 750,
+      "windows": []
+    },
+    {
+      "name": "BEDROOM 3",
+      "band": "top",
+      "x0": 5500,
+      "y0": 5500,
+      "x1": 9700,
+      "y1": 10000,
+      "width": 4200,
+      "depth": 4500,
+      "area_m2": 18.9,
+      "door_width": 750,
+      "windows": [
+        1500
+      ]
+    },
+    {
+      "name": "BEDROOM 5",
+      "band": "top",
+      "x0": 9700,
+      "y0": 5500,
+      "x1": 14500,
+      "y1": 10000,
+      "width": 4800,
+      "depth": 4500,
+      "area_m2": 21.6,
+      "door_width": 900,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "KITCHEN",
+      "band": "bottom",
+      "x0": 0,
+      "y0": 0,
+      "x1": 5100,
+      "y1": 4400,
+      "width": 5100,
+      "depth": 4400,
+      "area_m2": 22.44,
+      "door_width": 750,
+      "windows": [
+        900
+      ]
+    },
+    {
+      "name": "BEDROOM 1",
+      "band": "bottom",
+      "x0": 5100,
+      "y0": 0,
+      "x1": 7600,
+      "y1": 4400,
+      "width": 2500,
+      "depth": 4400,
+      "area_m2": 11.0,
+      "door_width": 800,
+      "windows": [
+        1200
+      ]
+    },
+    {
+      "name": "BEDROOM 4",
+      "band": "bottom",
+      "x0": 7600,
+      "y0": 0,
+      "x1": 11700,
+      "y1": 4400,
+      "width": 4100,
+      "depth": 4400,
+      "area_m2": 18.04,
+      "door_width": 850,
+      "windows": [
+        1500
+      ]
+    },
+    {
+      "name": "LIVING",
+      "band": "bottom",
+      "x0": 11700,
+      "y0": 0,
+      "x1": 14500,
+      "y1": 4400,
+      "width": 2800,
+      "depth": 4400,
+      "area_m2": 12.32,
+      "door_width": 800,
+      "windows": [
+        1500
+      ]
+    }
+  ],
+  "counts": {
+    "rooms": 8,
+    "doors": 8,
+    "windows": 7,
+    "bedrooms": 5
+  },
+  "total_wall_length": 104700.0,
+  "layers": [
+    "WALLS",
+    "ROOMS",
+    "ROOM_NAMES",
+    "CORRIDOR",
+    "DOORS",
+    "WINDOWS",
+    "DIMENSIONS",
+    "ANNOTATION"
+  ]
+}
